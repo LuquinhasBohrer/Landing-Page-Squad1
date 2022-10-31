@@ -1,0 +1,118 @@
+
+
+header {
+	background: #4A9C80;
+	padding: 40px 0;
+}
+
+.cabeçalho {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 15px;
+	right: 150px;
+}
+
+nav li {
+	display: inline;
+}
+
+a {
+	text-transform: uppercase;
+	color: black;
+	font-weight:bold;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+main {
+	width: 959px;
+	margin: 0 auto;
+}
+
+.corpo {
+	width: 959px;
+	margin: 0 auto;
+}
+
+h2 {
+	text-align: center;
+	padding: 30px 0;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.imagemborda1  {
+	width: 650px;
+	margin: 15px auto 40px auto;
+}
+
+.imagemborda1 li {
+	display: inline-block;
+	box-sizing: border-box;
+	border: 6px solid #4A9C80;
+	border-radius: 10px;
+	text-align: center;
+	background: #FFFFFF;
+	width: 100%
+}
+
+.foto_computador1 {
+	float: left;
+}
+
+.textbox-produto {
+	padding: 100px;
+	text-align: justify;
+	font-size: 20px
+}
+
+.corta-linha{
+	background: black;
+	width: 100%;
+	height: 50px;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 auto;
+	
+}
+
+.foto_computador2 {
+	float: right;
+}
+
+.imagemborda2 {
+	width: 940px;
+	margin: 15px auto 40px auto;
+}
+
+.imagemborda2 li {
+	display: inline-block;
+	box-sizing: border-box;
+	border: 6px solid #4A9C80;
+	border-radius: 10px;
+	text-align: center;
+	background: #FFFFFF;
+	width: 100%
+}
+
+/*
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	background: #FFFFFF;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000; 
+	border-radius: 10px;
+
+*/

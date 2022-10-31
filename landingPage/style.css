@@ -1,0 +1,787 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+    width: 10vw;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    animation-name: surgir;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+#inicio{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url(./images/fTalent1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+@keyframes rolar1 {
+    0%{right: 100vw;}
+    100%{right: -47vw;}
+}
+
+@keyframes rolar2 {
+    0%{left: 100vw;}
+    100%{left: -47vw;}
+}
+
+@keyframes surgir {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.talentTxt1{
+    height: 15vw;
+    margin-left: 5px;
+    position: absolute;
+    top: 15vh;
+    right: -47vw;
+    z-index: 0;
+    animation-name: rolar1;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+
+.talentTxt2{
+    height: 15vw;
+    margin-left: 5px;
+    position: absolute;
+    bottom: 15vh;
+    left: -47vw;
+    z-index: 0;
+    animation-name: rolar2;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+
+.content{
+    position: absolute;
+    top: 25vh;
+    left: 15vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    z-index: 1;
+    animation-name: surgir;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+.talentH2{
+    width: 20vw;
+}
+
+.content h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.vm{
+    background-color: #4B00B6;
+    padding: 5px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    align-self: flex-end;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.vm:hover{
+    transform: scale(1.1);
+    
+}
+
+.talentImg{
+    height: 32vw;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation-name: surgir;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;   
+}
+
+/*produtos*/
+
+#produto{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.carrossel{
+    height: 50vh;
+    z-index: 1;
+}
+
+#proImg{
+    height: 100%;
+}
+
+#plaImg{
+    height: 100%;
+    display: none;
+}
+
+#memImg{
+    height: 100%;
+    display: none;
+}
+
+#description{
+    width: 50%;
+    z-index: 1;
+    font-weight: 900;
+}
+
+.select{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.select hr{
+    height: 12px;
+    width: 2px;
+    background-color: rgba(0, 0, 0, .6);
+    border: none;
+    border-radius: 10px;
+}
+
+#description li{
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.processador{
+    display: none;
+    width: 100%;
+    font-size: 15px;
+}
+
+.placaVideo{
+    display: none;
+    width: 100%;
+    font-size: 15px;
+}
+
+.memoria{
+    display: none;
+    width: 100%;
+    font-size: 15px;
+}
+
+.mostrar{
+    display: flex;
+}
+
+#liPla{
+    opacity: 0.5;
+}
+
+#liMem{
+    opacity: 0.5;
+}
+
+.comprar{
+    position: absolute;
+    bottom: 10vw;
+    right: 10vw;
+    background-color: #4B00B6;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.comprar:hover{
+    transform: scale(1.1);
+}
+
+.tfundo1{
+    width: 98vw;
+    margin-left: 5px;
+    position: absolute;
+    top: 5vh;
+    right: -47vw;
+    z-index: 0;
+    opacity: 0.4;
+}
+
+
+.tfundo2{
+    width: 98vw;
+    margin-left: 5px;
+    position: absolute;
+    bottom: 5vh;
+    z-index: 0;
+    opacity: 0.4;
+    left: -47vw;
+}
+
+
+/*Prova Social*/
+
+.provaSocial{ 
+    background-image: url(./images/psFundo1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ps{
+    display: flex;
+    gap: 20%;
+    overflow-x: auto;
+    padding: 20px;
+    align-items: center;
+}
+.ps::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .ps {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  }
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.current-item{
+    transform: scale(1.15);
+    transition: 1s;
+}
+
+.item img{
+    height: 15vw;
+}
+
+.item h3{
+    font-weight: 900;
+}
+
+.profissao{
+    opacity: 0.6;
+}
+
+.item p{
+    text-align: center;
+    font-size: 12px;
+}
+
+.arrow-left, .arrow-right{
+    cursor: pointer;
+    height: 5vw;
+    opacity: 0.6;
+    padding: 10px;
+}
+
+/* contato inicio */ 
+
+#video{
+	position: absolute; 
+	right: 0; 
+	bottom: 0;
+    top: 0;
+    left: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: 100%; 
+	z-index: -1000;
+	background: no-repeat;
+	background-size: cover; 
+}
+
+#contatos {
+    position: relative;
+    height: 110vh;
+    width: 100%;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+#contatos .ps-contatos {
+    width: 95%;
+    margin: 0 auto
+}
+
+#contatos label, legend {
+    display: block;
+    text-align: left;
+    margin: 5px 0;
+    padding-top: 5px;
+}
+
+.button{
+    background-color: #4B00B6;
+    border: white solid 1px;
+    border-radius: 3px;
+    color: white;
+    width: 30%;
+    height: 15px;
+    box-shadow: 1px 2px 1px black;
+}
+
+#enviar{
+    background-color: #4B00B6;
+    border: white solid 1px;
+    border-radius: 3px;
+    color: white;
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#enviar:hover{
+    background-color: white;
+    border: #4B00B6 solid 1px;
+    color: #4B00B6; 
+}
+
+#enviar:active{
+    transform: scale(0.8);
+}
+
+#contatos h4 {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    text-shadow: 1px 2px 1px #4B00B6;
+}
+
+#contatos form {
+    margin-top: 25px
+}
+
+#contatos textarea {
+    padding: 5px;
+    background-color: #4B00B6;
+    border: white solid 1px;
+    border-radius: 3px;
+    color: white;
+    width: 30%;
+    box-shadow: 1px 2px 1px black;
+}
+
+
+/*Celular*/
+
+@media screen and (max-width: 500px){
+    .logo{
+        width: 30vw;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        animation-name: surgir;
+        animation-delay: 3s;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-fill-mode: both;
+    }
+    
+    #inicio{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        background-image: url(./images/fTalent1.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    @keyframes rolar1 {
+        0%{right: 100vw;}
+        100%{right: -80vw;}
+    }
+    
+    @keyframes rolar2 {
+        0%{left: 100vw;}
+        100%{left: -78vw;}
+    }
+    
+    @keyframes surgir {
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+    
+    .talentTxt1{
+        height: 25vw;
+        margin-left: 5px;
+        position: absolute;
+        top: 15vh;
+        right: -80vw;
+        z-index: 0;
+        animation-name: rolar1;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+    }
+    
+    .talentTxt2{
+        height: 25vw;
+        margin-left: 5px;
+        position: absolute;
+        bottom: 15vh;
+        left: -78vw;
+        z-index: 0;
+        animation-name: rolar2;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+    }
+    
+    .content{
+        position: static;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+        z-index: 1;
+        animation-name: surgir;
+        animation-delay: 3s;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-fill-mode: both;
+    }
+    
+    .talentH2{
+        width: 20vw;
+    }
+    
+    .content h2{
+        margin-bottom: 10px;
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .content p{
+        text-align: center;
+    }
+    
+    .vm{
+        align-self: center;
+    }
+    
+    .talentImg{
+        height: 50vw;
+        z-index: 1;
+        position: static;
+        animation-name: surgir;
+        animation-delay: 3s;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-fill-mode: both;   
+    }
+
+    /*Produto*/
+
+#produto{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.carrossel{
+    height: 50vw;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+#description{
+    width: 90%;
+    z-index: 1;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.select{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.select li{
+    text-align: center;
+}
+
+.comprar{
+    position: absolute;
+    bottom: 10vw;
+    right: 10vw;
+    background-color: #4B00B6;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.tfundo1{
+    height: 25vw;
+    width: auto;
+    margin-left: 5px;
+    position: absolute;
+    top: 5vh;
+    right: -80vw;
+    z-index: 0;
+    opacity: 0.4;
+}
+
+
+.tfundo2{
+    height: 25vw;
+    width: auto;
+    margin-left: 5px;
+    position: absolute;
+    bottom: 5vh;
+    z-index: 0;
+    opacity: 0.4;
+    left: -80vw;
+}
+
+/*Prova Social*/
+
+.provaSocial{ 
+    background-image: url(./images/psFundo1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ps{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    overflow-x: auto;
+    padding: 20px;
+    align-items: center;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.current-item{
+    transform: scale(1.15);
+    transition: 1s;
+}
+
+.item img{
+    height: 10vh;
+}
+
+.item p{
+    text-align: center;
+    font-size: 12px;
+}
+
+.arrow-left, .arrow-right{
+    display: none;
+}
+
+/*Contatos*/
+
+#video{
+	display: none; 
+}
+
+#contatos {
+    background-color: black;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contatos .ps-contatos {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contatos label, legend {
+    display: block;
+    text-align: left;
+    margin: 5px 0;
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+.button{
+    background-color: #4B00B6;
+    border: white solid 1px;
+    border-radius: 3px;
+    color: white;
+    width: 90%;
+    height: 15px;
+    box-shadow: 1px 2px 1px black;
+}
+
+#enviar{
+    background-color: #4B00B6;
+    border: white solid 1px;
+    border-radius: 3px;
+    color: white;
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 90%;
+}
+
+#enviar:active{
+    transform: scale(0.8);
+}
+
+#contatos h4 {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    text-shadow: 1px 2px 1px #4B00B6;
+    margin-bottom: 50px;
+}
+
+#contatos textarea{
+    width: 90%;
+}
+
+#contatos form {
+    margin-top: 25px
+}
+}
+

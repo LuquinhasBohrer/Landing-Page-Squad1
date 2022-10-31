@@ -1,0 +1,92 @@
+/* contato inicio */ 
+
+.contatos {
+    height: 120vh;
+    align-items: center;
+    background: linear-gradient(#9D00FF, #0C090A);
+}
+
+.contatos .ps-contatos {
+    width: 95%;
+    margin: 0 auto
+}
+
+.contatos label, legend {
+    display: block;
+    text-align: left;
+    margin: 5px 0;
+    padding-top: 5px
+}
+
+.contatos .ps-contatos form > input {
+    width: 40%;
+    padding: 5px
+}
+
+.contatos h4 {
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    padding: 8px 0;
+}
+
+.contatos form {
+    margin-top: 25px
+}
+
+.contatos textarea {
+    padding: 5px;
+}
+ 
+/* fim contato */
+
+/*mudanças background */
+ 
+#inicio{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url(./images/fTalent1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background: linear-gradient(#0C090A, #16F529);
+
+}
+
+#produto{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #16F529
+
+}
+
+.carrossel{
+    height: 50vh;
+    border:solid;
+    border-radius: 80px
+}
+
+.talentCarrossel{
+    height: 100%;
+    border-radius: 75px;
+}
+
+ .provaSocial{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(#16F529, #9D00FF)
+
+}
+
+
